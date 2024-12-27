@@ -1,0 +1,7 @@
+baseURL = ''
+languageCode = 'en-us'
+title = '11th SCZ IAPSM Conference Ratlam'
+
+[params]
+  theme = "Theme of SCZ IAPSM 25 Conference, Ratlam"
+  author = "Dr. Rizwan Ishak"

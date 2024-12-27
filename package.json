@@ -1,0 +1,23 @@
+{
+  "name": "scziapsmconrtm",
+  "version": "1.0.0",
+  "description": "conference website",
+  "main": "index.js",
+  "scripts": {
+    "css": "npx tailwindcss -i misc/input.css -o static/css/output.css",
+    "format": "npx prettier layouts/* --write"
+  },
+  "keywords": [
+    "website",
+    "hugo"
+  ],
+  "author": "Dr. Rizwan Ishak",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@preline/tabs": "^2.6.0",
+    "preline": "^2.6.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-go-template": "^0.0.15",
+    "tailwindcss": "^3.4.17"
+  }
+}
