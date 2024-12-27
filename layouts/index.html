@@ -1,0 +1,45 @@
+{{ define "main" }}
+	<section class="relative bg-gradient-to-b from-indigo-400/80 via-purple-200 to-transparent">
+		<div class="hidden sm:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10"
+			aria-hidden=true><img alt="Hero Background" fetchpriority=high width=1440 height=1214
+				decoding=async data-nimg=1 class=max-w-none style=color:transparent
+				src="{{ .Site.BaseURL }}images/8.svg"></div>
+		<div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+			<div class="pt-40 sm:pt-52">
+				<div class="max-w-5xl mx-auto text-center">
+					<h1 class="text-4xl md:text-7xl font-bold font-recoleta mb-6 text-clip text-gray-900"
+						data-aos=fade-up>11<sup>th</sup> South Central Zone IAPSM Conference</h1>
+					<p class="text-md md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto"
+						data-aos=fade-up data-aos-delay=100>Department of Community Medicine, Dr. Laxmi Narayan Pandey Government Medical College, Ratlam, cordially invites you to  11<sup>th</sup> South Central Zone IAPSM Conference on <span
+							class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">November 27-29, 2025</span>.
+					<div class="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-2"
+						data-aos=fade-up data-aos-delay=200>
+						<div><a class="px-8 py-4 font-medium inline-flex items-center justify-center border border-indigo-600 leading-snug transition duration-150 ease-in-out text-white text-md bg-indigo-700 hover:bg-indigo-800 w-full group rounded-xl"
+								href="https://app.sczconfratlam.com/new/cm0dxeyja0096cvtfxvmniocw?auth=open">Register <span
+									class="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1"><svg
+										xmlns=http://www.w3.org/2000/svg fill=none
+										viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor
+										aria-hidden=true class="w-4 h-4">
+										<path stroke-linecap=round stroke-linejoin=round
+											d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+									</svg></span></a></div>
+					</div>
+				</div>
+				<div class=mt-12>
+					<div class="p-2 md:p-6 mt-2 rounded-xl backdrop-blur-xs bg-white/30 border"
+						data-aos=fade-up data-aos-delay=300>
+						<div class="mx-auto mt-1 sm:justify-center relative">
+							<div
+								style="position:relative;padding-bottom:calc(57.67989417989418% + 42px);height:0">
+							<img class="mx-auto mt-1 rounded-xl sm:justify-center relative" src="images/banner04.jpeg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{{ partial "sponsors" .}}
+	{{ partial "team" .}}
+	{{ partial "pricing" .}}
+	{{ partial "calendar2" .}}
+{{ end }}

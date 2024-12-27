@@ -1,0 +1,33 @@
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name=description
+	content="{{ .Site.Params.theme }}">
+<meta property=og:type content=website>
+<meta property=og:url content="{{ .Site.BaseURL }}" />
+<link rel=canonical href="{{ .Site.BaseURL }}" />
+<meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
+<meta property=og:title content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta property=og:description
+	content="{{ .Site.Params.theme }}">
+<meta property=og:image content=/opengraph.png>
+<meta name=twitter:card content=summary_large_image>
+<meta name=twitter:site content=@sczconfratlamhq>
+<meta name=twitter:title content=sczconfratlam>
+<meta name=twitter:description
+	content="{{ .Site.Params.theme }}">
+<meta name=twitter:image content=/opengraph.png>
+<meta name=next-head-count content=17>
+<link rel=stylesheet href="{{ .Site.BaseURL }}css/stylesheet_8.css" crossorigin data-n-g> 
+<link rel=stylesheet href="{{ .Site.BaseURL }}css/output.css" crossorigin data-n-g>
+<link rel=stylesheet href="{{ .Site.BaseURL }}css/stylesheet_7.css" crossorigin data-n-p>
+<script src="{{ .Site.BaseURL }}js/preline.js"></script>
+<meta name=referrer content=no-referrer>
+<link type=image/x-icon rel="shortcut icon" href="{{ .Site.BaseURL }}images/6.ico">
+<meta http-equiv=content-security-policy
+	content="default-src 'none'; connect-src 'self' data: blob:; font-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' data: blob:; frame-src 'self' data: blob:; media-src 'self' data: blob:; script-src 'self' 'unsafe-inline' data: blob:; object-src 'self' data: blob:;">
+{{ partial "head-styles" . }}
+
+<noscript data-n-css></noscript>
+</head>

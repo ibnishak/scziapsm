@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        ".hugo_build.lock": true,
+        "node_modules": true,
+        "archetypes": true,
+        "content": true,
+        "i18n": true,
+        "assets": true
+    },
+    "files.associations": {
+        "*.html": "nunjucks"
+    }
+}
