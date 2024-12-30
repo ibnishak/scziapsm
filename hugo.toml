@@ -1,4 +1,6 @@
-baseURL = ''
+name = "Rizmatazz"
+license = "GPL-3.0-or-later"
+baseURL = 'http://localhost:8000'
 languageCode = 'en-us'
 title = '11th SCZ IAPSM Conference Ratlam'
 
