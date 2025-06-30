@@ -1,0 +1,20 @@
+- name: Conference ID
+  img: fa-id-card
+- name: Introduction
+  img: fa-play
+- name: Results
+  img: fa-square-poll-vertical
+- name: Conference Subtheme
+  img: fa-layer-group 
+- name: Aim/Objectives
+  img: fa-crosshairs
+- name: Conclusion
+  img: fa-hourglass-end
+- name: Title
+  img: fa-heading
+- name: Material and Methods
+  img: fa-signs-post
+- name: 3-5 Keywords
+  img: <i class="fa-solid fa-key
+- name: Author Details
+  img: fa-circle-user

@@ -1,16 +1,18 @@
 {
-    "files.exclude": {
-        ".hugo_build.lock": true,
-        "node_modules": true,
-        "archetypes": true,
-        "i18n": true,
-        "themes": true,
-        "package-lock.json": true,
-        "assets": true
-    },
-    "files.associations": {
-        "*.html": "nunjucks"
-    },
-    "prettier.configPath": ".prettierrc",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "files.exclude": {
+    ".hugo_build.lock": true,
+    "node_modules": true,
+    "archetypes": true,
+    "i18n": true,
+    "themes": true,
+    "package-lock.json": true,
+  },
+  "files.associations": {
+    "*.html": "nunjucks"
+  },
+  "prettier.configPath": ".prettierrc",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }

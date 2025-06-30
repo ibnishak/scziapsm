@@ -1,0 +1,112 @@
+{{ define "main" }}
+
+
+<section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+  <div class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
+    <img alt="Illustration" loading="lazy" width="1440" height="440" decoding="async" data-nimg="1" class="max-w-none"
+      style="color:transparent;opacity:0.3" src="{{.Site.BaseURL}}images/blur2.svg" />
+  </div>
+  <div class="h-10"></div>
+  <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
+    <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+      <h2 class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+        {{ .Title }}
+      </h2>
+    </div>
+
+
+    <p class="mt-5 text-justify">
+
+      Ratlam is a city that is nestled in the heart of Madhya Pradesh, beautifully blending history, culture, and
+      modernity. Known as the "City of Precious Jewels,". Ratlam's history is a fascinating tapestry of bravery,
+      princely charm, and cultural richness. It was historically called Ratnapuri, reflecting its rich heritage." The
+      city was gifted to Maharaja Ratan Singh Rathore by Mughal Emperor Shah Jahan as a token of gratitude for his
+      bravery. It later became a princely state under British rule, contributing to its architectural and cultural
+      legacy. The modern origins of Ratlam trace back to the early 19th century. In 1829, Captain Borthwick established
+      the new town of Ratlam, characterized by organized streets and well-constructed houses.
+    </p>
+
+    <p class="mt-5 text-justify">
+
+      Ratlam is famous for its vibrant trade in commodities like gold, grains, saree and Ratlami sev, making it a
+      significant commercial hub in the Malwa region. It is a city that is well connected by railways, being a major
+      junction on the New Delhi–Mumbai main line of Indian Railways
+    </p>
+
+    <h2 class="mt-5 text-2xl font-bold">Cultural Heritage</h2>
+    <p class="mt-5 text-justify">
+
+      Ratlam's cultural fabric is woven with traditions that reflect its royal past and diverse communities. The city is
+      home to several temples, including the Kalka Mata Temple near the Collectorate, which holds religious significance
+      for the locals.</p>
+    <p class="mt-5 text-justify">
+
+      The culinary traditions of Ratlam are also noteworthy. The city is renowned for its spicy snacks, particularly
+      Ratlami Sev, which is a popular delicacy among locals and visitors alike. The art of making this snack has been
+      passed down through generations, contributing to the city's rich gastronomic heritage.</p>
+
+    <h2 class="mt-5 text-2xl font-bold">Tourism and Attractions</h2>
+    Ratlam and its surrounding areas offer a plethora of attractions for history enthusiasts, nature lovers, and
+    spiritual seekers.
+
+    <section>
+      <div class="mx-auto max-w-screen-xl px--6 py-12 md:py-2 md:px-8">
+        <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {{ $base := .Site.BaseURL}}
+          {{ range .Site.Data.tourist }}
+
+          <li>
+            <a href="#" class="group block overflow-hidden">
+              <img src="{{ $base}}photos/{{.img}}" alt=""
+                class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]" />
+
+              <div class="relative bg-indigo-200 bg-opacity-20 pt-3">
+                <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                  {{ .name }}
+                </h3>
+
+              </div>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+    <p class="mt-5 text-justify">
+
+      <span class="mt-5 font-bold">Ranjit Vilas Palace: </span>
+      This historic palace, built in 1880, is a prime example of Italian architecture and serves as a reminder of Ratlam's royal heritage. Though currently facing challenges related to encroachments, efforts are underway to preserve and restore this architectural marvel.
+    </p>
+    <p class="mt-5 text-justify">
+      <span class="mt-5 font-bold">Sailana: </span>
+      Located approximately 20 km from Ratlam, Sailana is a historic town known for its royal palaces, the Cactus Garden, and the Kedareshwar temples. The Sailana Cactus Garden, established in 1960, was once the largest collection of cacti in Asia and remains a unique attraction.
+    </p>
+    <p class="mt-5 text-justify">
+      <span class="mt-5 font-bold">Kharmor Bird Sanctuary</span>
+      Situated near Sailana, the Kharmor Bird Sanctuary is a haven for bird watchers. Established in 1983, it is home to the rare Kharmor bird and serves as a breeding ground for the Lesser Florican, making it a significant site for avian biodiversity.
+    </p>
+    <p class="mt-5 text-justify">
+      <span class="mt-5 font-bold">Dholawad Dam</span>
+      Located near Raoti, about 25 km from Ratlam, Dholawad Dam is a serene spot ideal for picnics and nature walks. The tranquil environment and scenic views make it a popular destination for both locals and tourists
+    </p>
+
+     <h2 class="mt-5 text-2xl font-bold">How to reach Ratlam</h2>
+
+
+<ul class="marker:text-blue-600 space-y-1 text-gray-800 list-disc list-inside">
+
+<li>By Air: The nearest airport is Devi Ahilyabai Holkar Airport in Indore, located approximately 140 km away. From the airport, you can hire a taxi or take a bus.</li>
+<li>By Rail: Ratlam Junction is a major railway hub and one of the busiest stations in India. It connects to major cities like Mumbai, Delhi, Ajmer, and Khandwa.</li>
+<li>By Road: Ratlam is connected by National Highway 79, which is part of the Golden Quadrilateral. You can reach Ratlam from nearby cities like Indore, Udaipur, and Bhopal.</li>
+</ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+{{ end }}

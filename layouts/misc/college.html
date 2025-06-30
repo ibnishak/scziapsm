@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <section
+    class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+    <div
+      class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10"
+      aria-hidden="true">
+      <img
+        alt="Illustration"
+        loading="lazy"
+        width="1440"
+        height="440"
+        decoding="async"
+        data-nimg="1"
+        class="max-w-none"
+        style="color:transparent;opacity:0.3"
+        src="{{.Site.BaseURL}}images/blur2.svg" />
+    </div>
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
+      <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+          {{ .Title }}
+      </h2>
+      </div>
+
+      <section class="py-6 dark:bg-gray-100 dark:text-gray-900">
+	<div class="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
+		<img src="{{.Site.BaseURL}}college/coll2.jpeg" alt="" class="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll1.jpeg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll3.jpeg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll11.jpg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll6.jpeg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll7.jpg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll8.jpeg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll9.jpeg">
+		<img alt="" class="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="{{.Site.BaseURL}}college/coll10.jpeg">
+		<img src="{{.Site.BaseURL}}college/coll4.jpeg" alt="" class="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square">
+	</div>
+</section>
+      {{ .Content }}
+    </div>
+  </section>
+{{ end }}

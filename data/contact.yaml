@@ -1,0 +1,36 @@
+- name: Dr. Swarn Kanta Likhar
+  id: 1
+  title: Prof & HOD
+  img: skl.webp
+  phone: 9039865826
+  email: swarna.likhar2075@gmail.com 
+- name: Dr. Dhruvendra Pandey
+  id: 2
+  title: Associate Professor
+  img: dp.webp 
+  phone: 8269075295
+  email: pandit.dhruv06@gmail.com
+- name: Dr. Umesh Sinha
+  id: 3
+  title: Associate Professor
+  img: us.webp
+  phone: 9826036279
+  email:
+- name: Dr. Piyusha Mahashabde
+  id: 4
+  title: Assistant Professor
+  img: pm.webp
+  phone: 9993132837
+  email: piyusha1985@gmail.com
+- name: Dr. Anand Patidar
+  id: 5
+  title: Assistant Professor
+  img: ap.webp
+  phone: 8770808271
+  email: patidardranand@gmail.com
+- name: Dr. Lokendra Singh Kot
+  id: 6
+  title: Demonstrator cum Statistician
+  img: ls.webp
+  phone: 9406541980
+  email: lskot1972@gmail.com 

@@ -15,3 +15,5 @@ Tabs: https://preline.co/docs/tabs.html#horizontal-alignment
 - Popover: https://flowbite.com/docs/components/popover/#default-popover
 - Timeline: https://flowbite.com/docs/components/timeline/
 - https://flowbite.com/docs/components/tooltips/
+- Details badge: https://cruip.com/how-to-make-an-animated-number-counter-with-tailwind-css/
+- Team page: https://tailwindflex.com/@kuldeep541/team-showcase

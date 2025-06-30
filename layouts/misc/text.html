@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <section
+    class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+    <div
+      class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10"
+      aria-hidden="true">
+      <img
+        alt="Illustration"
+        loading="lazy"
+        width="1440"
+        height="440"
+        decoding="async"
+        data-nimg="1"
+        class="max-w-none"
+        style="color:transparent;opacity:0.3"
+        src="{{.Site.BaseURL}}images/blur2.svg" />
+    </div>
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
+      <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+          {{ .Title }}
+      </h2>
+      </div>
+      {{ .Content }}
+    </div>
+  </section>
+{{ end }}

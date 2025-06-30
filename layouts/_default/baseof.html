@@ -1,75 +1,73 @@
-<!DOCTYPE html>
-<html lang=en>
-    {{ partial "head" . }}
-    <body>
-        <div>
-            <div id=__next>
-                <div class="font-inter font-sans">
-                    <div class="relative overflow-hidden">
-                        <div class=relative>
-                          
-                            <nav class="bg-transparent absolute w-screen top-0 z-50">
-                            
-                                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-                                    <div class="flex justify-between h-16 items-center">
-                                        <div class="flex-shrink-0 flex items-center"><a href="{{ .Site.BaseURL }}">
-                                            <div><span class=sr-only>Home</span><img alt="sczconfratlam Logo" loading=lazy
-                                                    width=400 height=200 decoding=async data-nimg=1
-                                                    class="h-6 w-auto sm:h-8" style=color:transparent src="{{ .Site.BaseURL }}images/eleven.svg">
-                                            </div></a>
-                                        </div>
-                                        <div class="hidden lg:flex lg:items-center lg:space-x-1">
-                                            <div class=relative><a href="{{ .Site.BaseURL }}/committees"
-                                                    class="text-gray-800 hover:text-gray-900 px-1 md:px-3 py-2 rounded-md text-md font-semibold inline-flex items-center">Committees</a></div>
-                                            <div class=relative><button
-                                                    class="text-gray-800 hover:text-gray-900 px-1 md:px-3 py-2 rounded-md text-md font-semibold inline-flex items-center">Schedules</button></div>
-                                            <div class=relative><button
-                                                    class="text-gray-800 hover:text-gray-900 px-1 md:px-3 py-2 rounded-md text-md font-semibold inline-flex items-center">Rules and Guidelines</button></div><a
-                                                class="text-gray-800 hover:text-gray-900 px-1 md:px-3 py-2 rounded-md text-sm font-semibold"
-                                                href="{{ .Site.BaseURL }}product-demo">Theme</a><a
-                                                class="text-gray-800 hover:text-gray-900 px-1 md:px-3 py-2 rounded-md text-md font-semibold"
-                                                href="{{ .Site.BaseURL }}pricing">Contact</a>
-                                        </div>
-                                        <div class="hidden lg:flex lg:items-center lg:space-x-4"><a
-                                                class="text-gray-700 hover:text-gray-900 px-1 md:px-3 py-2 rounded-md text-sm font-semibold"
-                                                href="https://app.sczconfratlam.com/login?utm_source=website&amp;utm_medium=navbar_cta&amp;utm_campaign=navbar_cta">Submit Abstract</a><a
-                                                class="group text-sm font-medium inline-flex justify-center px-4 py-3 border border-transparent text-center rounded-lg text-white bg-indigo-700 hover:bg-indigo-800 ml-3"
-                                                href="https://app.sczconfratlam.com/new/cm0dxeyja0096cvtfxvmniocw?auth=open">Register</a></div>
-                                       <div class="lg:hidden"><button class="inline-flex items-center justify-center p-2 rounded-full text-gray-700 hover:text-gray-900 hover:bg-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg></button></div>
-                                    </div>
-                                </div>
-                                <div class="lg:hidden bg-white mx-4 rounded-xl border"><div class="px-2 pt-2 pb-3 space-y-2"><a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-sm" href="/features">Features</a><a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-sm" href="/use-cases">Use Cases</a><a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-sm" href="/pricing">Pricing</a><a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 text-sm" href="/product-demo">Get a demo</a><a class="flex text-center text-sm font-medium justify-center m-2 px-4 py-3 border border-transparent rounded-lg text-white bg-indigo-700 hover:bg-indigo-800" href="https://app.supademo.com/new/cm0dxeyja0096cvtfxvmniocw?auth=open">Start creating for free</a></div></div>
-                            </nav>
-	                        {{ block "main" . }}{{ end }}
+<!doctype html>
+<html lang="en">
+  {{ partial "head" . }}
+  <body>
+    <div>
+      <div id="__next">
+        <div class="font-inter font-sans">
+          <div class="relative overflow-hidden">
+            <div class="relative">
+              {{ partial "nav4" . }}
 
-                            {{ partial "footer" . }}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id=sczconfratlam-modal-container style=display:none;position:fixed;inset:0px;z-index:2147483646>
+              {{ block "main" . }}{{ end }}
+
+              {{ partial "footer" . }}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-	<next-route-announcer>
-		<p aria-live=assertive id=__next-route-announcer__ role=alert
-			style=border:0px;clip:rect(0px,0px,0px,0px);height:1px;margin:-1px;overflow:hidden;padding:0px;position:absolute;top:0px;width:1px;white-space:nowrap;overflow-wrap:normal>
-		</p>
-	</next-route-announcer>
-	<div id=warmly-widget style=z-index:2147483647;position:fixed>
-        <template shadowrootmode=open>
-			<div id=widget-root>
-				<div id=widget-container class=tss-184zcbx-widgetContainer>
-					<div class=tss-1s6cshm-backdropContainer style=opacity:0;visibility:hidden>Hello</div>
-					<div style=opacity:0;transform:scale(0.75,0.5625);visibility:hidden
-						class="widget-panel-container widget-panel-container-closed tss-gtkn4b-panelAnimationContainer sf-hidden">
-					</div>
-				</div>
-			</div>
-		</template>
-		<div style=display:none></div>
-	</div>
-	<script
-		data-template-shadow-root>(() => { document.currentScript.remove(); processNode(document); function processNode(node) { node.querySelectorAll("template[shadowrootmode]").forEach(element => { let shadowRoot = element.parentElement.shadowRoot; if (!shadowRoot) { try { shadowRoot = element.parentElement.attachShadow({ mode: element.getAttribute("shadowrootmode") }); shadowRoot.innerHTML = element.innerHTML; element.remove() } catch (error) { } if (shadowRoot) { processNode(shadowRoot) } } }) } })()
+    <div
+      id="sczconfratlam-modal-container"
+      style="display:none;position:fixed;inset:0px;z-index:2147483646"></div>
+    <next-route-announcer>
+      <p
+        aria-live="assertive"
+        id="__next-route-announcer__"
+        role="alert"
+        style="border:0px;clip:rect(0px,0px,0px,0px);height:1px;margin:-1px;overflow:hidden;padding:0px;position:absolute;top:0px;width:1px;white-space:nowrap;overflow-wrap:normal"></p>
+    </next-route-announcer>
+    <div id="warmly-widget" style="z-index:2147483647;position:fixed">
+      <template shadowrootmode="open">
+        <div id="widget-root">
+          <div id="widget-container" class="tss-184zcbx-widgetContainer">
+            <div
+              class="tss-1s6cshm-backdropContainer"
+              style="opacity:0;visibility:hidden">
+              Hello
+            </div>
+            <div
+              style="opacity:0;transform:scale(0.75,0.5625);visibility:hidden"
+              class="widget-panel-container widget-panel-container-closed tss-gtkn4b-panelAnimationContainer sf-hidden"></div>
+          </div>
+        </div>
+      </template>
+      <div style="display:none"></div>
+    </div>
+    <script data-template-shadow-root>
+      (() => {
+        document.currentScript.remove();
+        processNode(document);
+        function processNode(node) {
+          node
+            .querySelectorAll("template[shadowrootmode]")
+            .forEach((element) => {
+              let shadowRoot = element.parentElement.shadowRoot;
+              if (!shadowRoot) {
+                try {
+                  shadowRoot = element.parentElement.attachShadow({
+                    mode: element.getAttribute("shadowrootmode"),
+                  });
+                  shadowRoot.innerHTML = element.innerHTML;
+                  element.remove();
+                } catch (error) {}
+                if (shadowRoot) {
+                  processNode(shadowRoot);
+                }
+              }
+            });
+        }
+      })();
     </script>
-</body>
+  </body>
 </html>

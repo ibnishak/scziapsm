@@ -1,0 +1,94 @@
+{{ define "main" }}
+  <section class="relative">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div
+        class="pt-52 md:pt-36 flex flex-col align-center text-center justify-center">
+        <!-- <img src="{{ .Site.BaseURL }}images/theme.svg"/> -->
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold ">
+          Theme and Subthemes
+        </h2>
+
+        <section class="dark:bg-gray-100 dark:text-gray-800">
+          <div
+            class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-12 lg:flex-row lg:justify-between md:max-w-5xl">
+            <div
+              class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+              <h1 class="text-5xl font-bold leading-none sm:text-6xl">
+                Revitalising
+                <span class="dark:text-violet-600">Public Health</span>
+              </h1>
+              <p class="mt-6 mb-8 text-2xl sm:mb-12">
+                Unifying efforts through innovation and collaboration.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+              <img
+                src="{{ .Site.BaseURL }}logo.png"
+                alt=""
+                class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+            </div>
+          </div>
+        </section>
+
+        <div class="my-5 mb-15 relative z-10 flex flex-col md:flex-row">
+          <ul
+            class=" mx-auto max-w-xs text-left font-medium text-lg leading-none border-blue-200 divide-y divide-blue-200">
+            {{ template "st" (dict "var" "Adolescent Health") }}
+            {{ template "st" (dict "var" "Comprehensive Primary Health Care") }}
+            {{ template "st" (dict "var" "Demographic trends in India") }}
+            {{ template "st" (dict "var" "Emerging and Reemerging diseases") }}
+            {{ template "st" (dict "var" "Environment health &  climate change") }}
+            {{ template "st" (dict "var" "Gastro-intestinal infections") }}
+            {{ template "st" (dict "var" "Geriatric Health") }}
+            {{ template "st" (dict "var" "Health Insurance") }}
+            {{ template "st" (dict "var" "Healthcare planning & Management") }}
+            {{ template "st" (dict "var" "Holistic Medicine") }}
+          </ul>
+          <ul
+            class=" mx-auto max-w-xs text-left font-medium text-lg leading-none border-blue-200 divide-y divide-blue-200">
+            {{ template "st" (dict "var" "Immunisation: Adult and Child") }}
+            {{ template "st" (dict "var" "Implementation/translational research") }}
+            {{ template "st" (dict "var" "International Health") }}
+            {{ template "st" (dict "var" "Maternal, Child & Reproductive health") }}
+            {{ template "st" (dict "var" "Medical education strategies") }}
+            {{ template "st" (dict "var" "Mental Health") }}
+            {{ template "st" (dict "var" "National Health Programs") }}
+            {{ template "st" (dict "var" "Non-communicable diseases") }}
+            {{ template "st" (dict "var" "Nutrition and Food Security") }}
+            {{ template "st" (dict "var" "Occupational disorders") }}
+            
+            </ul>
+
+            <ul
+            class=" mx-auto max-w-xs text-left font-medium text-lg leading-none border-blue-200 divide-y divide-blue-200">
+            {{ template "st" (dict "var" "Respiratory infections") }}
+            {{ template "st" (dict "var" "Recent advances and Novel technologies") }}
+            {{ template "st" (dict "var" "Sustainable Development Goals") }}
+            {{ template "st" (dict "var" "Telemedicine and remote monitoring") }}
+            {{ template "st" (dict "var" "Tribal Medicine") }}
+            {{ template "st" (dict "var" "Universal healthcare") }}
+            {{ template "st" (dict "var" "Vector borne infections") }}
+            {{ template "st" (dict "var" "Vital Statistics") }}
+            {{ template "st" (dict "var" "Zoonotic diseases") }}
+            {{ template "st" (dict "var" "Miscellaneous") }}
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "st" }}
+  <li class="mt-2">
+    <span
+      class="py-3.5 w-full flex items-center text-blue-500 hover:text-blue-700 hover:bg-blue-50">
+      <span class="ml-5 mr-2.5 w-1 h-7 bg-blue-500 rounded-r-md"></span>
+      <p>
+        {{ .var }}
+      </p>
+    </span>
+  </li>
+{{ end }}

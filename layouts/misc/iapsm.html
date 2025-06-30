@@ -1,0 +1,87 @@
+{{ define "main" }}
+<section class="relative  bg-opacity-20 md:pt-10">
+  <div class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
+    <img alt="Illustration" loading="lazy" width="1440" height="440" decoding="async" data-nimg="1" class="max-w-none"
+      style="color:transparent;opacity:0.3" src="{{.Site.BaseURL}}images/blur2.svg" />
+  </div>
+  <div class="h-10"></div>
+
+  {{/*  <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+        <h2 class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+          IAPSM National Office Bearers
+        </h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+        {{ $base := .Site.BaseURL }}
+        {{ range .Site.Data.ianat }}
+        {{ template "card" (dict "base" $base "img" .img "name" .name "title" .title) }}
+        {{end}}
+      </div>
+    </div>
+  </div>  */}}
+  <section class="bg-white">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 ">
+    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+      <h2 class="my-10 text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+        IAPSM National Office Bearers
+      </h2>
+    </div>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div
+          class="container  grid justify-center mx-auto gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
+          {{ $base := .Site.BaseURL }}
+          {{ range .Site.Data.ianat }}
+          {{ template "card" (dict "base" $base "img" .img "name" .name "title" .title) }}
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<section class="bg-white">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 ">
+    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+      <h2 class="my-10 text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+        IAPSM SC Zonal Office Bearers
+      </h2>
+      <p class="text-xl text-orange-600">South Central Zone comprises of Madhya Pradesh & Chattisgarh</p>
+    </div>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div
+          class="container  grid justify-center mx-auto gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
+          {{ $base := .Site.BaseURL }}
+          {{ range .Site.Data.iazon }}
+          {{ template "card" (dict "base" $base "img" .img "name" .name "title" .title) }}
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ end }}
+
+
+{{ define "card" }}
+<div>
+  <span class="group mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+    <img src="{{ .base }}photos/{{.img}}" loading="lazy" alt="Photo by Austin Wade"
+      class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+  </span>
+
+  <div class="flex flex-col">
+    <span
+      class="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">{{.name}}</span>
+    <span class="text-gray-500">{{.title}}</span>
+
+  </div>
+</div>
+
+{{end}}

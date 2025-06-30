@@ -5,5 +5,9 @@ languageCode = 'en-us'
 title = '11th SCZ IAPSM Conference Ratlam'
 
 [params]
-  theme = "Theme of SCZ IAPSM 25 Conference, Ratlam"
+  theme = "REVITALISING PUBLIC HEALTH: UNIFYING EFFORTS THROUGH INNOVATION AND COLLABORATION"
   author = "Dr. Rizwan Ishak"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

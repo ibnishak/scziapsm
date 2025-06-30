@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class=" relative overflow-x-hidden  bg-opacity-20 md:pt-10">
+    <div class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
+        <img alt="Illustration" loading="lazy" width="1440" height="440" decoding="async" data-nimg="1"
+            class="max-w-none" style="color:transparent;opacity:0.3" src="{{.Site.BaseURL}}images/blur2.svg" />
+    </div>
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
+        <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+            <h2 class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+                {{ .Title }}
+            </h2>
+        </div>
+
+        <section class="bg-white relative shadow-md rounded-md overflow-hidden max-w-lg mx-auto mt-16">
+            <div class="bg-gray-100 py-2 px-4">
+                <h2 class="text-xl font-semibold text-gray-800">Organizing Committee</h2>
+            </div>
+            <ul class="divide-y divide-gray-200">
+                {{$base := .Site.BaseURL }}
+                {{ range .Site.Data.contact }}
+                <li class="flex items-center py-4 px-6">
+                    <span class="text-gray-700 text-lg font-medium mr-4">{{.id}}.</span>
+                    <img class="w-12 h-12 rounded-full object-cover mr-4"
+                        src="{{$base}}photos/{{.img}}" alt="User avatar">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-medium text-gray-800">{{.name}}</h3>
+                        <p class="text-gray-600 text-base">{{.phone}}</p>
+                        <p class="text-gray-600 text-base">{{.email}}</p>
+                    </div>
+                </li>
+                {{end}}
+            </ul>
+        </section>
+    </div>
+</section>
+
+{{end}}

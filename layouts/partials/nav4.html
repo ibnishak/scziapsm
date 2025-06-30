@@ -1,0 +1,217 @@
+<nav class="  {{ if .IsHome }}bg-transparent{{else}} bg-white/50 {{end}} border-gray-200 absolute w-screen top-0 z-50">
+  <!-- UPDATE BAR-------------------------------------- -->
+  {{ if .IsHome }}
+    <div
+      class="text-center bg-gradient-to-r from-indigo-400 to-indigo-600 py-3 px-2 text-sm font-medium text-white">
+      🎉 <span class="font-bold">UPDATES</span>: Early Bird registration is open
+      | Abstract submission is open
+      <!-- <a class="ml-1.5 bg-indigo-700 px-3 py-1 rounded-full text-xs hover:bg-indigo-400 transition-colors inline-block" href="https://supademo.com/blog/tag/product-updates/">See updates</a> -->
+    </div>
+  {{ end }}
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <!-- ========================================= LOGO AND HOME========================================= -->
+    <a
+      href="{{ .Site.BaseURL }}"
+      class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="{{ .Site.BaseURL }}logo.png" class="h-16" alt="Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap "
+        >SCZIAPSMCON25</span
+      >
+    </a>
+
+    <!-- ========================================= MAIN MENU BUTTON IN MOBILE ========================================= -->
+
+    <button
+      data-collapse-toggle="navbar-dropdown"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  "
+      aria-controls="navbar-dropdown"
+      aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <img
+        class="w-5 h-5"
+        src="{{ .Site.BaseURL }}images/icons/hamburger.svg" />
+    </button>
+
+    <!-- ========================================= MAIN MENU ========================================= -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul
+        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent ">
+        <li class="hover:bg-white/30 rounded-md">
+          <a
+            href="{{ .Site.BaseURL }}"
+            class="block py-2 px-3 rounded-sm md:bg-transparent  text-gray-700 hover:text-indigo-800  rounded-md font-semibold"
+            aria-current="page"
+            >Home</a
+          >
+        </li>
+
+        <!-- ========================================= ABOUT BUTTON ========================================= -->
+
+        <li class="hover:bg-white/30 rounded-md" style="margin-left: 0;">
+          <button
+            id="dropdownNavbarLink"
+            data-dropdown-toggle="commmitteeDropdown"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 hover:text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-800  md:w-auto  rounded-md font-semibold">
+            Committees
+            <img
+              class="w-2.5 h-2.5 ms-2.5"
+              src="{{ .Site.BaseURL }}images/icons/dropdown-arrow.svg" />
+          </button>
+          <div
+            id="commmitteeDropdown"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto">
+            <ul
+              class="py-2 text-sm text-gray-700"
+              aria-labelledby="dropdownLargeButton">
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}org-com/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >Organizing Committee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}org-team/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >Organizing Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}iapsm/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >IAPSM Office Bearers</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- =========================================END OF ABOUT BUTTON ========================================= -->
+
+        <!-- ========================================= ABOUT BUTTON ========================================= -->
+
+        <li class="hover:bg-white/30 rounded-md" style="margin-left: 0;">
+          <button
+            id="dropdownNavbarLink"
+            data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 hover:text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-800  md:w-auto  rounded-md font-semibold">
+            About
+            <img
+              class="w-2.5 h-2.5 ms-2.5"
+              src="{{ .Site.BaseURL }}images/icons/dropdown-arrow.svg" />
+          </button>
+          <div
+            id="dropdownNavbar"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto">
+            <ul
+              class="py-2 text-sm text-gray-700"
+              aria-labelledby="dropdownLargeButton">
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}about/college/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >About the College</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}about/dept/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >About the Department</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}about/iapsm/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >About IAPSM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}about/ratlam/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >About Ratlam</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- =========================================END OF ABOUT BUTTON ========================================= -->
+
+        <!-- =========================================SCIENTIFIC BUTTON ========================================= -->
+        <li class="hover:bg-white/30 rounded-md" style="margin-left: 0;">
+          <button
+            id="dropdownNavbarscientific"
+            data-dropdown-toggle="scientificmenu"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 hover:text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-800  md:w-auto  rounded-md font-semibold">
+            Scientific
+            <img
+              class="w-2.5 h-2.5 ms-2.5"
+              src="{{ .Site.BaseURL }}images/icons/dropdown-arrow.svg" />
+          </button>
+          <div
+            id="scientificmenu"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto">
+            <ul
+              class="py-2 text-sm text-gray-700"
+              aria-labelledby="dropdownLargeButton">
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}theme/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >Theme</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ .Site.BaseURL }}rules/"
+                  class="block px-4 py-2 hover:bg-gray-100 "
+                  >Rules and Regulations</a
+                >
+              </li>
+              <li>
+                <a href="{{ .Site.BaseURL }}awards/" class="block px-4 py-2 hover:bg-gray-100 "
+                  >Awards & Orations</a
+                >
+              </li>
+              <li>
+                <a href="{{ .Site.BaseURL }}schedule/" class="block px-4 py-2 hover:bg-gray-100 "
+                  >Schedule</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ========================================= END OF SCIENTIFIC BUTTON ========================================= -->
+        <li class="hover:bg-white/30 rounded-md " style="margin-left: 0;">
+          <a
+            href="{{.Site.BaseURL}}contact/"
+            class="block py-2 px-3 rounded-sm md:bg-transparent  text-gray-700 md:hover:bg-transparent md:hover:text-indigo-800 rounded-md font-semibold"
+            aria-current="page"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="hidden lg:flex lg:items-center lg:space-x-4">
+      <a
+        class="group text-sm font-medium inline-flex justify-center px-4 py-3 border border-transparent text-center rounded-lg text-indigo-800 backdrop-blur-xs bg-white/30  ml-3 transition hover:bg-gray-50
+        "
+        href="{{.Site.BaseURL}}rules/"
+        >Submit Abstract</a
+      >
+
+      <a
+        class="group text-sm font-medium inline-flex justify-center px-4 py-3 border border-transparent text-center rounded-lg text-white bg-indigo-700 hover:bg-indigo-800"
+        href="https://forms.gle/56spqzL3Cezy3mZS6" target="_blank"
+        >Register</a
+      >
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <section class="relative">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div
+        class="pt-40 sm:pt-52 flex flex-col align-center text-center justify-center">
+        <!-- <img src="{{ .Site.BaseURL }}images/theme.svg"/> -->
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold ">
+          Theme and Subthemes
+        </h2>
+
+        <section class="dark:bg-gray-100 dark:text-gray-800">
+          <div
+            class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-12 lg:flex-row lg:justify-between md:max-w-5xl">
+            <div
+              class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+              <h1 class="text-5xl font-bold leading-none sm:text-6xl">
+                Revitalising <span class="dark:text-violet-600">Public Health</span>
+              </h1>
+              <p class="mt-6 mb-8 text-2xl sm:mb-12">
+                Unifying efforts through innovation and collaboration.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+              <img
+                src="{{ .Site.BaseURL }}logo.png"
+                alt=""
+                class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <div>
+          <div class="p-2 md:p-6 mt-2 rounded-xl  bg-white/30 ">
+            <div class="mx-auto mt-1 sm:justify-center">
+              <div>
+                <img
+                  class="mx-auto mt-1 rounded-xl sm:justify-center"
+                  src="{{ .Site.BaseURL }}images/theme.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

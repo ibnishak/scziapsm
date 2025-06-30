@@ -1,0 +1,157 @@
+{{ define "main" }}
+<section class="relative overflow-x-hidden bg-opacity-20 md:pt-10">
+  <div class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
+    <img alt="Illustration" loading="lazy" width="1440" height="440" decoding="async" data-nimg="1" class="max-w-none"
+      style="color:transparent;opacity:0.3" src="{{ .Site.BaseURL }}images/blur2.svg" />
+  </div>
+  <div class="h-10"></div>
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+    <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+      <h2 class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+        {{ .Title }}
+      </h2>
+     
+    </div>
+   
+      <h2 class="text-xl font-inter text-gray-900 md:text-xl mb-6 text-center font-bold">A structured abstract should be
+        submitted with the following headings</h2>
+
+      <div class="p-4 flex justify-center">
+        <div class="container max-w-4xl grid grid-cols-1 gap-6 m-4 mx-auto md:m-0 md:grid-cols-2 xl:grid-cols-3 rounded-md bg-gray-100 p-4">
+          {{ range .Site.Data.abstract }}
+         
+          <li class=" flex flex-row mb-2">
+            <div
+              class="select-none cursor-pointer bg-white  rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+              <div class="flex flex-col rounded-md w-10 h-10   justify-center items-center mr-4 text-blue-700 text-lg"> <i
+                  class="fa-solid {{ .img }}"></i></div>
+              <div class=" flex-1 pl-1">
+                <div class="font-medium">{{ .name }}</div>
+              </div>
+            </div>
+          </li>
+          {{ end }}
+        </div>
+      </div>
+      {{/*  {{ partial "abs-head2" .}}  */}}
+    
+    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+      <ul class="marker:text-blue-600 space-y-1 text-gray-800 list-disc list-outside">
+
+        <li class="font-medium py-5">
+          The specific
+          <a class="text-blue-600 visited:text-purple-600 underline" target="_blank"
+            href="{{ .Site.BaseURL }}theme/">conference subtheme</a>
+          must be clearly stated under which the poster/oral presentation should
+          be considered.
+        </li>
+        <hr />
+        <li class="font-medium py-5">
+          Name of
+          <span class="text-pink-600 font-bold">ALL AUTHORS</span> should be
+          mentioned along with designation & affiliated institute. Contact
+          details & email ID of corresponding author should be provided.
+        </li>
+        <hr />
+
+        <li class="font-medium py-5">
+          The first author will be considered as presenting author, and certificate will be issued on basis of first
+          author.
+          If the paper is not presented by the first author, signed authorization letter from first author should be
+          attached with the abstract.
+        </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          Abstract should be limited to 250-300 words excluding title, authors and keywords.
+        </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          Main title of the abstract must be concise. Avoid using abbreviations in title (except standard
+          abbreviations).
+        </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          DO NOT include images, graphs or tables in abstract.
+        </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          Abstract should be prepared in Microsoft© Word (“docx” file format).
+        </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          Font family and font size to be used in abstract is as follows: Font Family: Times New Roman. Font Size: 12 pt
+          for
+          titles, 10 pt for body. </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          Abstracts and permission letter from Institutional Ethical Committee
+          for the study should be emailed to
+          <a target="_blank" class="text-blue-600 font-bold visited:text-purple-600 underline"
+            href="mailto:abstractscziapsmcon2025@gmail.com?subject=Abstract submission for SCZIAPSM Conference,Ratlam">abstractscziapsmcon2025@gmail.com</a>
+          with the subject line "<span class="font-bold">Abstract submission for SCZIAPSM Conference, Ratlam</span>".
+        </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          All accepted abstracts will be published in the conference souvenir. </li>
+        <hr />
+
+
+        <li class="font-medium py-5">
+          NOTE: Following abstracts WILL NOT be considered:
+          <ul class="marker:text-blue-600 space-y-1 text-gray-800 list-disc list-outside ml-5">
+            <li>
+              Previously presented in another conference/published elsewhere.
+            </li>
+            <li>Part of onging thesis or pilot study.</li>
+          </ul>
+        </li>
+        <hr />
+      </ul>
+    </div>
+    
+  </div>
+</section>
+
+<section class="bg-gray-100 text-gray-800">
+  <div class="md:max-w-5xl flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-8 lg:flex-row lg:justify-between">
+    <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+      <img src="{{ .Site.BaseURL }}/images/research.svg" alt=""
+        class="obect-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+    </div>
+    <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+      <h1 class="text-5xl font-bold leading-none sm:text-6xl">
+        <span class="text-violet-600">30 Sept 2025</span>
+      </h1>
+      <p class="mt-6 mb-8 text-lg sm:mb-12">
+        Last date for submission of abstract.
+        <br class="hidden md:inline lg:hidden" />
+        Ensure your seats and mail your abstracts now!
+      </p>
+      <div
+        class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start ">
+        <a rel="noopener noreferrer" target="_blank"
+          href="mailto:abstractscziapsmcon2025@gmail.com?subject=Abstract submission for SCZIAPSM Conference,Ratlam"
+          class="button-75"> <span class="text">Email your abstract</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</div>
+{{ end }}
