@@ -3459,6 +3459,9 @@
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
+  .py-36 {
+    padding-block: calc(var(--spacing) * 36);
+  }
   .ps-20 {
     padding-inline-start: calc(var(--spacing) * 20);
   }
