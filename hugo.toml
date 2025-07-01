@@ -1,6 +1,6 @@
 name = "Rizmatazz"
 license = "GPL-3.0-or-later"
-baseURL = 'http://localhost:8000'
+baseURL = ''
 languageCode = 'en-us'
 title = '11th SCZ IAPSM Conference Ratlam'
 
@@ -11,3 +11,6 @@ title = '11th SCZ IAPSM Conference Ratlam'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
