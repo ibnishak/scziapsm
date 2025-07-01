@@ -37,12 +37,13 @@
     <div class="py-20 bg-gray-100">
       <div class="container mx-auto px-6 md:px-12">
         <div class="grid gap-12 items-center md:grid-cols-2">
+         {{ $base := .Site.BaseURL }}
           {{ range .Site.Data.ianat }}
             <div class="space-y-4 text-center">
               <img
                 class="w-64 h-64 mx-auto object-cover rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64 max-w-60  transform transition duration-500 
                                 hover:scale-110"
-                src="{{ .Site.BaseURL }}/photos/{{ .img }}"
+                src="{{ $base }}/photos/{{ .img }}"
                 alt="man"
                 loading="lazy"
                 width="640"
@@ -81,12 +82,13 @@
     <div class="py-20 bg-gray-100">
       <div class="container mx-auto px-6 md:px-12">
         <div class="grid gap-12 items-center md:grid-cols-3">
+         {{ $base := .Site.BaseURL }}
           {{ range .Site.Data.iazon }}
             <div class="space-y-4 text-center">
               <img
                 class="w-64 h-64 mx-auto object-cover rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64 max-w-60  transform transition duration-500 
                                 hover:scale-110"
-                src="{{ .Site.BaseURL }}/photos/{{ .img }}"
+                src="{{ $base }}/photos/{{ .img }}"
                 alt="man"
                 loading="lazy"
                 width="640"
