@@ -5,6 +5,10 @@
 
 @plugin "flowbite-typography";
 
+/* Preline UI */
+@source "../node_modules/preline/dist/*.js";
+
+
 
 .nb-btn {
   @apply block py-2 px-3  rounded relative overflow-hidden before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-gray-900 before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180;
@@ -69,3 +73,11 @@
   }
 }
  
+.body ol {
+list-style-type: decimal;
+list-style-position: inside;
+}
+
+.body h2 {
+@apply text-4xl font-extrabold dark:text-white
+}

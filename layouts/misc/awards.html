@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+  
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto mt-10 max-w-5xl lg:py-16 lg:px-6 ">
+      <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+          {{ .Title }}
+        </h2>
+      </div>
+
+      <div >
+        <div class="container max-w-8xl mx-auto px-4" style="cursor: auto;">
+          <div class="flex flex-wrap">
+            {{ $base := .Site.BaseURL }}
+            {{ range .Site.Data.awards }}
+              <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4  bg-white opacity-100 z-10 transition-opacity duration-300 hover:opacity-50">
+                <div class="px-6">
+                  <a href="{{ $base }}{{ .link }}">
+                    <img
+                      alt="John Doe"
+                      src="{{ $base }}images/{{ .img }}"
+                      class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" />
+                  </a>
+                  <div class="pt-6 text-center">
+                  <a href="{{ $base }}{{ .link }}">
+                    <h1
+                      class="text-gray-900 text-md leading-normal mt-0 mb-2">
+                      {{ .name }}
+                    </h1>
+                    </a>
+                  </div>
+                </div>                
+              </div>
+            {{ end }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

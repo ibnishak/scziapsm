@@ -1,0 +1,108 @@
+{{ define "main" }}
+  <main>
+    <div class="relative bg-opacity-80">
+      <div
+        class="hidden opacity-40 sm:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10"
+        aria-hidden="true">
+        <img
+          alt="Hero Background"
+          fetchpriority="high"
+          width="1440"
+          height="1214"
+          decoding="async"
+          data-nimg="1"
+          class="max-w-none"
+          style="color: transparent;"
+          src="{{ .Site.BaseURL }}images/blur2.svg" />
+      </div>
+      <div
+        class="mx-auto pb-32 max-w-6xl px-4 pt-48 sm:pt-52 sm:pb-24  flex justify-center">
+        <div class="text-center max-w-5xl">
+          <div class="mx-auto max-w-4xl sm:px-10">
+            <h1
+              class="text-4xl font-recoleta font-bold text-gray-900 sm:text-5xl md:text-5xl">
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-600">
+                IAPSM National Office Bearers</span
+              >
+            </h1>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="mx-auto max-w-4xl px-4 mb-10">
+    <div class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid gap-12 items-center md:grid-cols-2">
+          {{ range .Site.Data.ianat }}
+            <div class="space-y-4 text-center">
+              <img
+                class="w-64 h-64 mx-auto object-cover rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64 max-w-60  transform transition duration-500 
+                                hover:scale-110"
+                src="{{ .Site.BaseURL }}/photos/{{ .img }}"
+                alt="man"
+                loading="lazy"
+                width="640"
+                height="805" />
+              <div>
+                <h4 class="text-2xl">{{ .name }}</h4>
+
+                <span class="block text-md text-blue-900"
+                  >{{ .title }}</span
+                >
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <div
+        class="mx-auto pb-16 max-w-6xl px-4 pt-48 sm:pt-16 sm:pb-24  flex justify-center">
+        <div class="text-center max-w-5xl">
+          <div class="mx-auto max-w-4xl sm:px-10">
+            <h1
+              class="text-4xl font-recoleta font-bold text-gray-900 sm:text-5xl md:text-5xl">
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-600">
+                IAPSM Zonal Office Bearers</span
+              >
+            </h1>
+          </div>
+          
+        </div>
+      </div>
+
+  <div class="mx-auto max-w-screen-xl px-4 mb-10">
+    <div class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid gap-12 items-center md:grid-cols-3">
+          {{ range .Site.Data.iazon }}
+            <div class="space-y-4 text-center">
+              <img
+                class="w-64 h-64 mx-auto object-cover rounded-full md:w-40 md:h-40 lg:w-64 lg:h-64 max-w-60  transform transition duration-500 
+                                hover:scale-110"
+                src="{{ .Site.BaseURL }}/photos/{{ .img }}"
+                alt="man"
+                loading="lazy"
+                width="640"
+                height="805" />
+              <div>
+                <h4 class="text-2xl">{{ .name }}</h4>
+
+                <span class="block text-md text-blue-900"
+                  >{{ .title }}</span
+                >
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+{{ end }}

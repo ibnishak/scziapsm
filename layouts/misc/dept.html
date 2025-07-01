@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+    <div
+      class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10"
+      aria-hidden="true">
+      <img
+        alt="Illustration"
+        loading="lazy"
+        width="1440"
+        height="440"
+        decoding="async"
+        data-nimg="1"
+        class="max-w-none"
+        style="color:transparent;opacity:0.3"
+        src="{{ .Site.BaseURL }}images/blur2.svg" />
+    </div>
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
+      <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+          {{ .Title }}
+        </h2>
+      </div>
+      <p class="mt-5 text-justify">
+        The Department of Community Medicine at Dr. Laxminarayan Pandey
+        Government Medical College, Ratlam is a key department dedicated to
+        public health and preventive medicine. It focuses on training
+        high-quality public health professionals and community physicians as per
+        NMC norms. The department of Community Medicine is headed by Dr. Swarn
+        Kanta Likhar with other faculties, and 9 post-graduate residents
+        involved in teaching, research, and service, aiming to address national
+        and local public health challenges.
+      </p>
+      <figure class="relative max-w-sm mt-8">
+        <img
+          class="h-auto max-w-full rounded-lg shadow-xl dark:shadow-gray-800"
+          src="{{ .Site.BaseURL }}images/dept.webp" />
+      </figure>
+    </div>
+  </section>
+{{ end }}

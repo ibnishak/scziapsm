@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
+      <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+          {{ .Title }}
+        </h2>
+      </div>
+      <div class="flex items-center justify-center ">
+      <div class="relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
+      <image src='{{.Site.BaseURL}}images/{{$.Param "img"}}' style="height: 415px;width: 415px;"/>
+      </div>
+      </div>
+      <div class="body">
+      {{ .Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}

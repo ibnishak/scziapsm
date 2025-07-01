@@ -1,6 +1,5 @@
 {{ define "main" }}
-  <section
-    class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+  <section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
     <div
       class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10"
       aria-hidden="true">
@@ -13,90 +12,153 @@
         data-nimg="1"
         class="max-w-none"
         style="color:transparent;opacity:0.3"
-        src="{{.Site.BaseURL}}images/blur2.svg" />
+        src="{{ .Site.BaseURL }}images/blur2.svg" />
     </div>
     <div class="h-10"></div>
     <div class="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-6 ">
       <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
         <h2
           class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
-          {{ .Title }} <img class="h-auto mx-auto" style="max-width:20vw" src="{{.Site.BaseURL}}/photos/iapsm-logo.png" alt="image description">
-
-      </h2>
+          {{ .Title }}
+          <img
+            class="h-auto mx-auto"
+            style="max-width:20vw"
+            src="{{ .Site.BaseURL }}/photos/iapsm-logo.png"
+            alt="image description" />
+        </h2>
       </div>
-      
 
+      <p class="mt-5 text-justify">
+        Indian Association of Preventive and Social Medicine(IAPSM) was founded
+        in 1974 as a result of increasing awareness of the importance of social
+        and preventive medicine in India. Public health professionals and
+        medical educators recognized the necessity of a dedicated platform to
+        advance Community Medicine and preventive strategies. Over the years,
+        the association has expanded its network to include thousands of public
+        health professionals, researchers, academicians, and policymakers.
+      </p>
+      <section>
+        <div class="mx-auto max-w-screen-xl px--6 py-12 md:py-2 md:px-8">
+          <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <li class="group block overflow-hidden">
+              <img
+                src="/photos/iapsm.jpg"
+                alt=""
+                class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px" />
+            </li>
+            <li class="group block overflow-hidden">
+              <img
+                src="/photos/quiz.png"
+                alt=""
+                class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px" />
+            </li>
+            <li class="group block overflow-hidden">
+              <img
+                src="/photos/young.png"
+                alt=""
+                class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px" />
+            </li>
+            <li class="group block overflow-hidden">
+              <img
+                src="/photos/natcon.jpg"
+                alt=""
+                class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <h2 class="mb-2 text-lg font-semibold text-gray-900 mt-10">
+        Objectives of IAPSM
+      </h2>
 
-
-
-<p class="mt-5 text-justify">
-Indian Association of Preventive and Social Medicine(IAPSM) was founded in 1974 as a result of increasing awareness of the importance of social and preventive medicine in India. Public health professionals and medical educators recognized the necessity of a dedicated platform to advance Community Medicine and preventive strategies. Over the years, the association has expanded its network to include thousands of public health professionals, researchers, academicians, and policymakers.
-</p>
- <section>
-   <div class="mx-auto max-w-screen-xl px--6 py-12 md:py-2 md:px-8">
-      <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-         <li class="group block overflow-hidden">
-            <img src="/photos/iapsm.jpg" alt=""
-               class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px"/>
-         </li>
-                  <li class="group block overflow-hidden">
-            <img src="/photos/quiz.png" alt=""
-               class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px"/>
-         </li>
-                        <li class="group block overflow-hidden">
-            <img src="/photos/young.png" alt=""
-               class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px"/>
-         </li>
-                        <li class="group block overflow-hidden">
-            <img src="/photos/natcon.jpg" alt=""
-               class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px"/>
-         </li>
+      <ul
+        class="marker:text-blue-600 space-y-1 text-gray-800 list-disc list-inside">
+        <li>Promoting public health awareness and education.</li>
+        <li>Enhancing community medicine research and innovation.</li>
+        <li>
+          Supporting preventive healthcare measures to reduce disease burden.
+        </li>
+        <li>
+          Advocating health policies and strategies for better healthcare
+          outcomes.
+        </li>
+        <li>
+          Organizing training programs and conferences for health professionals.
+        </li>
+        <li>Collaborating with national and international health agencies.</li>
+        <li>Strengthening the public health workforce in India.</li>
       </ul>
-   </div>
-    </section>
-<h2 class="mb-2 text-lg font-semibold text-gray-900 mt-10">Objectives of IAPSM</h2>
 
-<ul class="marker:text-blue-600 space-y-1 text-gray-800 list-disc list-inside">
-<li>Promoting public health awareness and education.</li>
-<li>Enhancing community medicine research and innovation.</li>
-<li>Supporting preventive healthcare measures to reduce disease burden.</li>
-<li>Advocating health policies and strategies for better healthcare outcomes.</li>
-<li>Organizing training programs and conferences for health professionals.</li>
-<li>Collaborating with national and international health agencies.</li>
-<li>Strengthening the public health workforce in India.</li>
-</ul>
+      <h2 class="mb-2 text-lg font-semibold text-gray-900 mt-10">
+        Organizational Structure
+      </h2>
 
+      IAPSM operates through a decentralized structure comprising:
+      <ul
+        class="mt-2 marker:text-blue-600 space-y-1 text-gray-800 list-disc list-inside">
+        <li>
+          <span class="font-semibold text-gray-900"
+            >National Executive Committee</span
+          >: Oversees the overall functioning and strategic direction of the
+          association.
+        </li>
 
-<h2 class="mb-2 text-lg font-semibold text-gray-900 mt-10">Organizational Structure</h2>
+        <li>
+          <span class="font-semibold text-gray-900"
+            >State and Zonal Chapters</span
+          >: Implement IAPSM's objectives at regional levels, organizing
+          conferences, workshops etc.
+        </li>
 
-IAPSM operates through a decentralized structure comprising:
-<ul class="mt-2 marker:text-blue-600 space-y-1 text-gray-800 list-disc list-inside">
+        <li>
+          <span class="font-semibold text-gray-900">Specialized Committees</span
+          >: Focus on specific areas such as infectious diseases, maternal and
+          child health, and health systems.
+        </li>
 
-<li><span class="font-semibold text-gray-900">National Executive Committee</span>: Oversees the overall functioning and strategic direction of the association.</li>
+        <li>
+          <span class="font-semibold text-gray-900">Academic Bodies</span>:
+          Manage fellowship programs, short courses, and other educational
+          initiatives.
+        </li>
+      </ul>
+      <h2 class="mb-2 text-lg font-semibold text-gray-900 mt-10">
+        Key contributions of IAPSM
+      </h2>
 
-<li><span class="font-semibold text-gray-900">State and Zonal Chapters</span>: Implement IAPSM's objectives at regional levels, organizing conferences, workshops etc.</li>
+      <ul
+        class="marker:text-pink-600 space-y-1 text-gray-800 list-decimal list-inside">
+        <li>Conducting epidemiological Studies</li>
+        <li>
+          Training and Educational courses to enhance skills in public health.
+        </li>
+        <li>
+          Policy Advocacy: Collaborating MoHFW to shape public health policies.
+        </li>
+        <li>
+          Public Health interventions and implementing community-based programs.
+        </li>
+      </ul>
+      <p class="mt-10 text-justify">
+        IAPSM actively promotes research in public health through its official
+        journal – Indian Journal of Community Medicine (IJCM). The journal
+        publishes peer-reviewed research articles, systematic reviews, case
+        studies, and policy papers on various aspects of preventive and social
+        medicine. It collaborates with national and international organizations
+        such as WHO, UNICEF, IMA, NHM etc.
+      </p>
 
-<li><span class="font-semibold text-gray-900">Specialized Committees</span>: Focus on specific areas such as infectious diseases, maternal and child health, and health systems.</li>
-
-<li><span class="font-semibold text-gray-900">Academic Bodies</span>: Manage fellowship programs, short courses, and other educational initiatives.</li>
-</ul>
-<h2 class="mb-2 text-lg font-semibold text-gray-900 mt-10">Key contributions of IAPSM</h2>
-
-<ul class="marker:text-pink-600 space-y-1 text-gray-800 list-decimal list-inside">
-   <li> Conducting epidemiological Studies </li>
-   <li> Training and Educational courses to enhance skills in public health.</li>
-   <li> Policy Advocacy: Collaborating MoHFW to shape public health policies.</li>
-   <li> Public Health interventions and implementing community-based programs.</li>
-</ul>
-<p class="mt-10 text-justify">
-IAPSM actively promotes research in public health through its official journal – Indian Journal of Community Medicine (IJCM). The journal publishes peer-reviewed research articles, systematic reviews, case studies, and policy papers on various aspects of preventive and social medicine. It collaborates with national and international organizations such as WHO, UNICEF, IMA, NHM etc.
-</p>
-
-<p class="mt-5 text-justify">
-The Indian Association of Preventive and Social Medicine (IAPSM) remains a pillar in India's public health sector. Through its research, policy advocacy, and training initiatives, IAPSM continues to contribute significantly to preventive healthcare and Community Medicine. As India faces evolving health challenges, the association’s role in shaping public health policies and promoting health equity will be even more critical in the years to come. Strengthening its efforts will not only benefit healthcare professionals but also improve the overall health outcomes of the nation.
- 
-</p>
-
+      <p class="mt-5 text-justify">
+        The Indian Association of Preventive and Social Medicine (IAPSM) remains
+        a pillar in India's public health sector. Through its research, policy
+        advocacy, and training initiatives, IAPSM continues to contribute
+        significantly to preventive healthcare and Community Medicine. As India
+        faces evolving health challenges, the association’s role in shaping
+        public health policies and promoting health equity will be even more
+        critical in the years to come. Strengthening its efforts will not only
+        benefit healthcare professionals but also improve the overall health
+        outcomes of the nation.
+      </p>
     </div>
   </section>
 {{ end }}

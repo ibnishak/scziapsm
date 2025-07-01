@@ -1,0 +1,22 @@
+- name: Theme
+  link: theme/
+- name: Awards
+  link: awards/
+- name: Claudia Bose Award
+  link: awcb/
+- name: VB Saxena Award
+  link: awvb/
+- name: Mittal Oration Award
+  link: awmo/
+- name: SN Sharma Award
+  link: awsn/
+- name: Lifetime Achievement Award
+  link: awla/
+- name: Schedule
+  link: schedule/
+- name: Contact
+  link: contact/
+- name: Submit abstract
+  link: mailto:abstractscziapsmcon2025@gmail.com?subject=Abstract submission for SCZIAPSM Conference,Ratlam
+- name: Register
+  link: https://forms.gle/56spqzL3Cezy3mZS6

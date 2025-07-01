@@ -1,5 +1,5 @@
 ---
-layout: iapsm
+layout: iapsm-office
 title: Office Bearers -IAPSM
 type: misc
 ---

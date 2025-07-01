@@ -1,0 +1,16 @@
+- name: Dr. Claudia Bose Memorial Award
+  img: claudiabose.jpg
+  link: awcb/
+- name: Dr. V. B. Saxena Award
+  img: vb-sax.png
+  link: awvb/
+- name: Mittal Oration Gold Medal Awards
+  img: mcmittal.png
+  link: awmo/
+- name: Dr. S. N. Sharma Memorial Oration Award
+  img: snsharma.png
+  link: awsn/
+- name: Lifetime Achievement Award
+  img: awla.jpg
+  link: awla/
+  
