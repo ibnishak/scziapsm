@@ -1,8 +1,10 @@
 {{ define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
   <main>
-    <div class="relative bg-white bg-opacity-80">
+    <div class="relative bg-opacity-20">
       <div
-        class="hidden opacity-40 sm:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10"
+        class="hidden opacity-10 sm:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10"
         aria-hidden="true">
         <img
           alt="Hero Background"
@@ -43,14 +45,21 @@
          {{ $base := .Site.BaseURL }}
           {{ range .Site.Data.pgs }}
             <div class="space-y-4 text-center">
+            {{ if .special }}
+                <a id="riz-prof" href="{{ $base }}riz/">
+                {{ end }}
               <img
+                
                 class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64 max-w-60  transform transition duration-500 
                                 hover:scale-110"
                 src="{{ $base }}/photos/{{ .img }}"
-                alt="man"
+                alt="{{ .name }}"
                 loading="lazy"
                 width="640"
                 height="805" />
+                  {{ if .special }}
+                </a>
+                {{ end }}
               <div>
                 <h4 class="text-2xl">{{ .name }}</h4>
 
@@ -64,4 +73,25 @@
       </div>
     </div>
   </div>
+  <script>
+(function() {
+  const runConfetti = document.querySelector('#riz-prof');
+  runConfetti.addEventListener('mouseover', () => {
+  confetti("tsparticles", {
+    angle: 90,
+    particleCount: 200,
+    position: { x: 30, y: 50 },
+    spread: 90,
+    startVelocity: 60,
+    decay: 0.9,
+    gravity: 1,
+    drift: 0,
+    ticks: 200,
+    scalar: 1,
+    zIndex: 2000,
+    disableForReducedMotion: true
+  });
+  });
+})();
+</script>
 {{ end }}

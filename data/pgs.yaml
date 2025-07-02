@@ -1,5 +1,6 @@
 - name: Dr. Rizwan Ishak
   img: riz2.webp
+  special: true
   committee: Finance Committee
 - name: Dr. Heena Chawla
   img: hc.webp
