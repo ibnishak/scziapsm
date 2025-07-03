@@ -22,13 +22,13 @@
 <meta property=og:title content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
 <meta property=og:description
 	content="{{ .Site.Params.theme }}">
-<meta property=og:image content=/opengraph.png>
-<meta name=twitter:card content=summary_large_image>
+<meta property=og:image content="{{ .Site.BaseURL }}/photos/iapsm-logo.jpg">
+<meta name=twitter:card content="{{ .Site.BaseURL }}/photos/iapsm-logo.jpg">
 <meta name=twitter:site content=@sczconfratlamhq>
 <meta name=twitter:title content=sczconfratlam>
 <meta name=twitter:description
 	content="{{ .Site.Params.theme }}">
-<meta name=twitter:image content=/opengraph.png>
+<meta name=twitter:image content="{{ .Site.BaseURL }}/photos/iapsm-logo.jpg">
 <meta name=next-head-count content=17>
 <!--<link rel=stylesheet href="{{ .Site.BaseURL }}css/stylesheet_8.css" crossorigin data-n-g> -->
 <link rel=stylesheet href="{{ .Site.BaseURL }}css/output.css" crossorigin data-n-g>
