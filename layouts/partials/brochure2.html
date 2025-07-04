@@ -4,6 +4,7 @@
     class=" flex flex-col-reverse md:flex-row justify-center items-center max-w-screen-xl mx-auto">
     <!-- Left: Image -->
     <div class="">
+     <a target="_blank" href="https://drive.google.com/uc?export=download&id=1OALxUvs1rHQYYhTfXPo8aLu9pGHzq2kj">
       <img
         srcset="
           {{ .Site.BaseURL }}images/brochure-small.webp 480w,
@@ -11,7 +12,10 @@
         "
         src="{{ .Site.BaseURL }}images/brochure-big.webp"
         alt="Brochure"
-        class="max-h-144 shadow-xl sm:pt-2 md:pt-0" />
+        class="max-h-144 shadow-xl sm:pt-2 md:pt-0 hover:shadow-3xl" /></a>
+           <a class="md:hidden mt-4 flex justify-center items-center button-36 w-full" target="_blank"
+        href="https://drive.google.com/uc?export=download&id=1OALxUvs1rHQYYhTfXPo8aLu9pGHzq2kj">Download
+       </a>
     </div>
     <!-- Right: Login Form -->
     <div class="px-10">
@@ -19,7 +23,7 @@
         class="text-5xl sm:text-4xl lg:text-5xl font-recoleta mb-6 font-semibold text-grey-800 text-center">
         Conference Brochure
       </h2>
-      <a class="button-36 w-full flex justify-center items-center" target="_blank"
+      <a class="hidden md:flex justify-center items-center button-36 w-full" target="_blank"
         href="https://drive.google.com/uc?export=download&id=1OALxUvs1rHQYYhTfXPo8aLu9pGHzq2kj">Download
        </a>
     </div>
