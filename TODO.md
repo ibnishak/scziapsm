@@ -1,5 +1,6 @@
-Ratlam as a dropdown: Places to Visit(https://flowbite.com/docs/typography/images/#image-card), Travel Details (Data table: https://flowbite.com/docs/plugins/datatables/#default-datatable)
-Add Carousal
+Ratlam as a dropdown: 
+Places to Visit(https://flowbite.com/docs/typography/images/#image-card), 
+Travel Details (Data table: https://flowbite.com/docs/plugins/datatables/#default-datatable)
 Add notification bell menu for updates
 Masonry grid for Ratlam images
 User profile Popover on Schedule, U
@@ -17,3 +18,11 @@ Tabs: https://preline.co/docs/tabs.html#horizontal-alignment
 - https://flowbite.com/docs/components/tooltips/
 - Details badge: https://cruip.com/how-to-make-an-animated-number-counter-with-tailwind-css/
 - Team page: https://tailwindflex.com/@kuldeep541/team-showcase
+
+
+
+- Sponsorship
+- Change to better carousal
+- Accomodation
+- Map to leaflet map
+- Rest of places
