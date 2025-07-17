@@ -1,6 +1,5 @@
 {{ define "main" }}
   <section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
-  
     <div class="h-10"></div>
     <div class="py-8 px-4 mx-auto mt-10 max-w-5xl lg:py-16 lg:px-6 ">
       <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
@@ -10,33 +9,73 @@
         </h2>
       </div>
 
-      <div >
-        <div class="container max-w-8xl mx-auto px-4" style="cursor: auto;">
-          <div class="flex flex-wrap">
-            {{ $base := .Site.BaseURL }}
-            {{ range .Site.Data.awards }}
-              <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4  bg-white opacity-100 z-10 transition-opacity duration-300 hover:opacity-50">
-                <div class="px-6">
-                  <a href="{{ $base }}{{ .link }}">
-                    <img
-                      alt="John Doe"
-                      src="{{ $base }}images/{{ .img }}"
-                      class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" />
-                  </a>
-                  <div class="pt-6 text-center">
-                  <a href="{{ $base }}{{ .link }}">
-                    <h1
-                      class="text-gray-900 text-md leading-normal mt-0 mb-2">
-                      {{ .name }}
-                    </h1>
-                    </a>
-                  </div>
-                </div>                
-              </div>
-            {{ end }}
+      <div class=" wave-container justify-center">
+        <span class="wave-bar bg-red-500 dark:bg-red-400"></span>
+        <span class="wave-bar bg-red-500 dark:bg-red-400"></span>
+        <span class="wave-bar bg-red-500 dark:bg-red-400"></span>
+        <span class="wave-bar bg-red-500 dark:bg-red-400"></span>
+        <span class="wave-bar bg-red-500 dark:bg-red-400"></span>
+        <span class="md:ml-2"> NOTE:</span>
 
+        <span class="hidden md:flex">
+          Applications for awards are open. Fill your applications and send to
+          &nbsp;
+          <a
+            class="underline text-indigo-600"
+            href="mailto:scziapsmcon2025@gmail.com?subject=Application for Awards"
+            >scziapsmcon2025@gmail.com</a
+          >
+        </span>
+      </div>
+      <div class=" md:hidden text-center">
+        Applications for awards are open. Fill your applications and send to
+        &nbsp;
+        <a
+          class="underline text-indigo-600 ml-2"
+          href="mailto:scziapsmcon2025@gmail.com?subject=Application for Awards"
+          >scziapsmcon2025@gmail.com</a
+        >
+      </div>
+      <div
+        class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
+        {{ $base := .Site.BaseURL }}
+        {{ range .Site.Data.awards }}
+
+          <div
+            class="block max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform  transition duration-500">
+            <div class="relative">
+              <img
+                class="w-full rounded-xl"
+                src="{{ $base }}images/{{ .img }}"
+                alt="Colors" />
+              <p
+                class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
+                {{ .group }}
+              </p>
+            </div>
+            <h1 class="mt-4 text-gray-800 text-lg text-center font-bold">
+              {{ .name }}
+            </h1>
+            <div class="my-4">
+              <div class="flex rounded-md justify-center" role="group">
+                <a
+                  href="{{$base}}/{{ .link }}"
+                  class="px-4 py-2 text-sm font-medium text-cyan-600 bg-white border border-gray-100 shadow-xs rounded-s-lg hover:bg-gray-100  cursor-pointer transition ease-in-out">
+                  Read more
+                </a>
+
+                <a
+                   href="{{ .application }}"
+                  class="px-4 py-2 text-sm font-medium text-indigo-900 bg-white border border-gray-100 shadow-xs  hover:bg-gray-100  cursor-pointer  rounded-e-lg">
+                  Application
+                </a>
+              </div>
+
+              {{/* <button class="block mt-4 text-lg w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg text-center cursor-pointer">Read more</button> */}}
+            </div>
           </div>
-        </div>
+        {{ end }}
+
       </div>
     </div>
   </section>

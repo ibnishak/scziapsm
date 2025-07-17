@@ -1,16 +1,26 @@
-- name: Dr. Claudia Bose Memorial Award
+- name: Dr. Claudia Bose Award
   img: claudiabose.jpg
   link: awcb/
-- name: Dr. V. B. Saxena Award
+  group: Post-graduates
+  application: https://docs.google.com/document/d/15RzrgPgdFSL_uQoebj2tneG9NOBmHCaekeS5AzugysQ/edit?usp=sharing
+- name: Late Dr. V. B. Saxena Award
   img: vb-sax.png
   link: awvb/
-- name: Mittal Oration Gold Medal Awards
+  group: Young Faculty
+  application: https://docs.google.com/document/d/1nCvdj4GteEGzIFZs9KUoszbij-xPtrUCHYpiPrr1wPE/edit?usp=sharing
+- name: Mittal Oration Award
   img: mcmittal.png
   link: awmo/
+  group: Young Faculty
+  application: https://docs.google.com/document/d/1p1qWnk8p8C2aOpb4CAeDfK3eIzUKnjYFGsj_NdlGX-c/edit?usp=sharing
 - name: Dr. S. N. Sharma Memorial Oration Award
   img: snsharma.png
   link: awsn/
-- name: Lifetime Achievement Award
+  group: Senior Faculty
+  application: https://docs.google.com/document/d/1ozKXs-aDetxuDEl2BmIH1gJtRmjZFIpPkun34OgiOIY/edit?usp=sharing
+- name: Lifetime Achievement Award for Senior Faculty
   img: awla.jpg
   link: awla/
+  group: Senior Faculty
+  application: https://docs.google.com/document/d/1rTaFL9mev3cr3AYmqdRze0n-tYbH30cvBhzAs7wpLlU/edit?usp=sharing
   
