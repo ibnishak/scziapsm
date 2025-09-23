@@ -8,7 +8,7 @@
     "package-lock.json": true,
   },
   "files.associations": {
-    "*.html": "gohtml"
+    "*.html": "html"
   },
   "prettier.configPath": ".prettierrc",
   "editor.defaultFormatter": "esbenp.prettier-vscode",

@@ -1,0 +1,87 @@
+{{ define "main" }}
+<section class=" relative overflow-x-hidden bg-opacity-20 md:pt-10">
+    <div class="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
+        <img alt="Illustration" loading="lazy" width="1440" height="440" decoding="async" data-nimg="1"
+            class="max-w-none" style="color:transparent;opacity:0.3" src="{{ .Site.BaseURL }}images/blur2.svg" />
+    </div>
+    <div class="h-10"></div>
+    <div class="py-8 px-4 mx-auto mt-10 max-w-5xl lg:py-16 lg:px-6 ">
+        <div class="my-10 mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+            <h2 class="text-4xl md:text-5xl font-recoleta mb-4 text-gray-900 font-semibold">
+                {{ .Title }}
+            </h2>
+
+
+
+            <div class="flex gap-4">
+
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="https://drive.google.com/file/d/1HcS7WYk4sp3ZOF2TEz1nDstwSh9v2gLr/view?usp=sharing"
+                        target="_blank">
+                        <img class="rounded-t-lg" src="{{ .Site.BaseURL }}ai.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Mastery of
+                                AI in research</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-xl italic font-serif text-sky-600">Dr. Sharon Baisil</p>
+                        <p class="mb-3 font-normal text-gray-700">Assoc. Prof, Dept of Community
+                            Medicine, MOSC Medical College, Kolenchery<br>CEO, Krontome</p>
+                        <p class="mb-3 font-normal text-gray-700">Beginner friendly hands-on training
+                            on AI tools and medical research with focus on AI powered literature review.</p>
+                        <a href="https://drive.google.com/file/d/1HcS7WYk4sp3ZOF2TEz1nDstwSh9v2gLr/view?usp=sharing"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                            Read more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="https://drive.google.com/file/d/1xk2aUzc5LgFZ3sjgkLQvHeF0qfXVkVIA/view?usp=sharing"
+                        target="_blank">
+                        <img class="rounded-t-lg" src="{{ .Site.BaseURL }}comm.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Public
+                                Health Communication</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-xl italic font-serif text-sky-600">Dr Animesh Jain</p>
+                        <p class="mb-3 font-normal text-gray-700">Professor, Department of
+                            Community Medicine, KMC
+                            Mangalore<br>&nbsp;</p>
+                        <p class="mb-3 font-normal text-gray-700">Undertand the science of
+                            communication, message framing and design, combating
+                            misinformation, and engaging stakeholders</p>
+                        <a href="https://drive.google.com/file/d/1xk2aUzc5LgFZ3sjgkLQvHeF0qfXVkVIA/view?usp=sharing"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                            Read more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</section>
+{{ end }}
